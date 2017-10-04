@@ -13,9 +13,10 @@ export default class AddAttendee extends Component {
         let refs = this.refs;
         let name = refs.name.value;
         let color = refs.color.value
+        let id = this.id;
 
         // Trigger action
-        this.props.addAttendee(name, color);
+        this.props.addAttendee(name, color, id);
 
         // Reset form
         refs.addAttendee.reset();
